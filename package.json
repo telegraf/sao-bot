@@ -1,0 +1,25 @@
+{
+  "name": "sao-bot",
+  "version": "0.0.1",
+  "description": "Telegram bot SAO generator",
+  "repository": {
+    "url": "telegraf/sao-bot",
+    "type": "git"
+  },
+  "author": "dotcypress <oss@vitaly.codes>",
+  "license": "MIT",
+  "files": [
+    "saofile.js",
+    "template"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "superb": "^1.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "sao": "^1.0.0"
+  }
+}
