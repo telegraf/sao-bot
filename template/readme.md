@@ -1,5 +1,4 @@
 <% const normalUserName = username.toLowerCase() -%>
-
 [![Build Status](https://travis-ci.org/<%= normalUserName %>/<%= name %>.svg?branch=master)](https://travis-ci.org/<%= normalUserName %>/<%= name %>)
 # <%= name %>
 

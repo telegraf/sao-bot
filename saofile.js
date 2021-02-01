@@ -11,7 +11,7 @@ module.exports = {
       },
       {
         name: 'description',
-        message: 'How would you descripe the new bot',
+        message: 'How would you describe the new bot',
         default: `my ${superb()} bot`
       },
       {
