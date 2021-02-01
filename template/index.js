@@ -1,14 +1,13 @@
-const Composer = require('telegraf/composer')
-const session = require('telegraf/session')
+const { Composer, session } = require('telegraf')
 
 const bot = new Composer()
 
 bot.use(session())
 
-bot.start(({ reply }) => reply('Welcome message'))
-bot.help(({ reply }) => reply('Help message'))
-bot.settings(({ reply }) => reply('Bot settings'))
+bot.start((ctx) => ctx.reply('Welcome message'))
+bot.help((ctx) => ctx.reply('Help message'))
+bot.settings((ctx) => ctx.reply('Bot settings'))
 
-bot.command('date', ({ reply }) => reply(`Server time: ${Date()}`))
+bot.command('date', (ctx) => ctx.reply(`Server time: ${Date()}`))
 
 module.exports = bot
